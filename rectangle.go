@@ -16,3 +16,7 @@ func (r Rectangle) Perimeter() int {
 func NewRectangle(length int, breadth int) Rectangle {
 	return Rectangle{length, breadth}
 }
+
+func NewSquare(size int) Rectangle {
+	return Rectangle{size, size}
+}

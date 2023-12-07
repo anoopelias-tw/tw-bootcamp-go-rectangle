@@ -28,4 +28,14 @@ var _ = Describe("CabRides", func() {
 		Expect(rectangle.Perimeter()).To(Equal(30))
 	})
 
+	It("should calculate the area of a square of side 10 as 100", func() {
+		square := NewSquare(10)
+		Expect(square.Area()).To(Equal(100))
+	})
+
+	It("should calculate the perimeter of a square of side 10 as 40", func() {
+		square := NewSquare(10)
+		Expect(square.Perimeter()).To(Equal(40))
+	})
+
 })
