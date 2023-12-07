@@ -1,0 +1,20 @@
+package main
+
+import (
+	. "github.com/onsi/ginkgo/v2"
+	. "github.com/onsi/gomega"
+)
+
+var _ = Describe("CabRides", func() {
+	It("should calculate area of rectangle of length 5 and breadth 3 as 15", func() {
+		rectangle := NewRectangle(5, 3)
+		area := rectangle.Area()
+
+		Expect(area).To(Equal(15))
+	})
+
+	It("should calculate area of rectangle of length 6 and breadth 9 as 54", func() {
+		rectangle := NewRectangle(6, 9)
+		Expect(rectangle.Area()).To(Equal(54))
+	})
+})
