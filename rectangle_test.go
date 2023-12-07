@@ -17,4 +17,15 @@ var _ = Describe("CabRides", func() {
 		rectangle := NewRectangle(6, 9)
 		Expect(rectangle.Area()).To(Equal(54))
 	})
+
+	It("should calculate the perimeter of a rectangle of length 5 and breadth 3 as 16", func() {
+		rectangle := NewRectangle(5, 3)
+		Expect(rectangle.Perimeter()).To(Equal(16))
+	})
+
+	It("should calculate the perimeter of a rectangle of length 6 and breadth 9 as 30", func() {
+		rectangle := NewRectangle(6, 9)
+		Expect(rectangle.Perimeter()).To(Equal(30))
+	})
+
 })
