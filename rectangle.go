@@ -5,11 +5,11 @@ type Rectangle struct {
 	breadth int
 }
 
-func (r Rectangle) Area() int {
+func (r *Rectangle) Area() int {
 	return r.length * r.breadth
 }
 
-func (r Rectangle) Perimeter() int {
+func (r *Rectangle) Perimeter() int {
 	return 2 * (r.length + r.breadth)
 }
 
